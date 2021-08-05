@@ -1,0 +1,88 @@
+{
+  "Edfa": [
+    {
+      "type_variety": "high_detail_model_example",
+      "type_def": "advanced_model",
+      "gain_flatmax": 25,
+      "gain_min": 15,
+      "p_max": 21,
+      "advanced_config_from_json": "advance_amp.json",
+      "out_voa_auto": false,
+      "allowed_for_design": false
+    }
+  ],
+  "Fiber": [
+    {
+      "type_variety": "SMF28",
+      "dispersion": 1.67e-05,
+      "gamma": 0.00124
+    }
+  ],
+  "Span": [
+    {
+      "power_mode": false,
+      "delta_power_range_db": [
+        -2.0,
+        3.0,
+        0.5
+      ],
+      "max_fiber_lineic_loss_for_raman": 0.25,
+      "target_extended_gain": 2.5,
+      "max_length": 150,
+      "length_units": "km",
+      "max_loss": 28,
+      "padding": 10,
+      "EOL": 0,
+      "con_in": 0,
+      "con_out": 0
+    }
+  ],
+  "Roadm": [
+    {
+      "target_pch_out_db": -20,
+      "add_drop_osnr": 38,
+      "restrictions": {
+        "preamp_variety_list": [],
+        "booster_variety_list": []
+      }
+    }
+  ],
+  "SI": [
+    {
+      "f_min": 193050000000000.0,
+      "baud_rate": 56800000000.0,
+      "f_max": 194325000000000.0,
+      "spacing": 75000000000.0,
+      "power_dbm": 2.0,
+      "power_range_db": [
+        -5.0,
+        1.0,
+        0.5
+      ],
+      "roll_off": 0.15,
+      "tx_osnr": 40,
+      "sys_margins": 2
+    }
+  ],
+  "Transceiver": [
+    {
+      "type_variety": "vendorA_trx-type1",
+      "frequency": {
+        "min": 193050000000000.0,
+        "max": 194325000000000.0
+      },
+      "mode": [
+        {
+          "format": "mode 1",
+          "baud_rate": 56000000000.0,
+          "OSNR": 18,
+          "bit_rate": 300000000000.0,
+          "roll_off": 0.15,
+          "tx_osnr": 28,
+          "min_spacing": 75000000000.0,
+          "cost": 1
+        }
+      ]
+    }
+  ]
+}

@@ -15,5 +15,5 @@ For more details on BOW, please visit our website: http://bow.csail.mit.edu
 * Ax 0.1.20
 * GNPy 2.1
 
-## 3. Licence
-BOW is MIT-licenced.
+## 3. License
+BOW is MIT-licensed.

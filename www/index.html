@@ -1,0 +1,224 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<head>
+    <title>BOW</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/csail.ico">
+    <script src="function.js"></script>
+    <script src="function2.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <ul id="left-links">
+            <li class="link"><a href=""><b>BOW: Bayesian-Optimized Wavelengths</b></a></li>
+        </ul>
+        <ul id="right-links">
+            <li class="link"><a href="#code">Artifact</a></li>
+            <li class="link"><a href="#paper">Paper</a></li>
+        </ul>
+    </header>
+    <div class="section">
+        <div class="inner">
+            <div class="maintitle"><b>BOW: First Real-World Demonstration of a Bayesian Optimization System for
+                    Wavelength Reconfiguration</b></div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="inner">
+            <div class="title">Overview</div>
+            <div class="body">
+                We demonstrate a practical Bayesian Optimization system for wavelength reconfiguration at Facebook
+                backbone. Our system uses a firewall for safe deployment. It is open-source, compatible with any vendor,
+                and achieves 4.76x faster wavelength reconfiguration.
+                <br /><br />
+                BOW is part of the <b>Reconfigurable Networks</b> project, check out more <a
+                    href="http://reconfignets.csail.mit.edu/" target="_blank">here</a>.
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="inner">
+            <div class="title">Diagram</div>
+            <div class="body">
+                <div class="body centered">
+                    <img id="demo-image" src="images/bow_overall.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="inner">
+            <div class="title">Insights</div>
+            <div class="body">
+                <li>Today's wavelength provisioning is slow (tens of minutes), mainly because of amplifier
+                    reconfigurations.</li>
+                <li>Today's optical line systems rely on proprietary amplifier control method based on complex modeling
+                    of amplifiers (noise figures, gain profiles).</b>.</li>
+                <li>BOW leverages Bayesian Optimization for in-situ learning of amplifier control strategies.</li>
+                <li>BOW is <b>production-ready</b> and <b>compatible</b> with multi-vendor optical devices</b>.</li>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="inner">
+            <div id="talk" class="title">Talk</div>
+            <div id="videoPlayer" class="article-section page-section">
+                <h3 class="article-heading">Presentation Video <i class="far fa-video purple-color"></i></h3>
+                <div class="media-block">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <div style="position: relative; display: block;">
+                            <div style="padding-top: 50%;">
+                                <video width="560" height="315" data-account="76009408001" data-player="kJ2uDQtNOV"
+                                    data-embed="default" data-video-id="6273879982001" class="video-js" controls
+                                    style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;"></video>
+                                <script
+                                    src="https://players.brightcove.net/76009408001/kJ2uDQtNOV_default/index.min.js"></script>
+                                <script>videojs.getPlayer("vjs_video_3_html5_api").ready(function () {
+                                        var myPlayer = this;
+                                        myPlayer.on("loadedmetadata", function () {
+                                            var tracks = myPlayer.textTracks();
+                                            var hasCaptions = false;
+                                            for (var i = 0; i < (tracks.length); i++) {
+                                                tracks[i].mode = "disabled";
+                                                if (tracks[i].kind == 'captions' || tracks[i].kind == 'subtitles') {
+                                                    hasCaptions = true;
+                                                }
+                                            }
+                                            if (!hasCaptions) {
+                                                myPlayer.addRemoteTextTrack({
+                                                    kind: 'subtitles',
+                                                    language: 'en',
+                                                    label: 'English',
+                                                    src: '/transcripts/pending.vtt'
+                                                });
+                                            }
+                                        });
+                                    });</script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="inner">
+                <div id="code" class="title">Artifact</div>
+                <div class="body">
+                    <div class="code-type">
+                        <object class="icon" type="image/svg+xml" data="images/github.svg" style="height: 50px">
+                            Your browser does not support SVG
+                        </object>
+                        <span id="github-link">Code available: <a class="github-button"
+                                href="https://github.com/hipersys-team/bow" data-show-count="true"
+                                aria-label="Star arrow-bow/bow on GitHub">bow</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="inner">
+                <div id="paper" class="title">Publication</div>
+                <div class="body">
+                    <b>BOW: First Real-World Demonstration of a Bayesian Optimization System for Wavelength
+                        Reconfiguration</b><br>
+                    Z. Zhong, M. Ghobadi, M. Balandat, S. Katti, A. Kazerouni, J. Leach, M. McKillop, Y. Zhang<br>
+                    <em><a href="https://www.ofcconference.org/en-us/home/">OFC 2021</a> </em><br>
+                    <font color="red"><b>Postdeadline Paper</b></font><br>
+                    <a href="https://people.csail.mit.edu/ghobadi/papers/bow_ofc_2021.pdf" target="_blank">Paper</a> |
+                    <a href="https://people.csail.mit.edu/ghobadi/slides/bow_slides_ofc_2021.pptx"
+                        target="_blank">Slides</a> |
+                    <a href="https://www.osapublishing.org/abstract.cfm?uri=OFC-2021-F3B.1#videoPlayer"
+                        target="_blank">Video</a> |
+                    <a href="#paper" onclick="showCitation(); return false;">BibTeX</a> |
+                    <a href="https://github.com/hipersys-team/bow" target="_blank">Artifact</a>
+                </div>
+                <div class="citation" id="citation">
+                    @inproceedings{zhong2021bow,
+                    title={BOW: First Real-World Demonstration of a Bayesian Optimization System for Wavelength
+                    Reconfiguration},
+                    author={Zhong, Zhizhen and Ghobadi, Manya and Balandat, Maximilian and Katti, Sanjeevkumar and
+                    Kazerouni, Abbas and Leach, Jonathan and McKillop, Mark and Zhang, Ying},
+                    booktitle={Optical Fiber Communication Conference},
+                    pages={F3B--1},
+                    year={2021},
+                    organization={Optical Society of America}
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="inner">
+                <div id="paper" class="title">Related Publications</div>
+                <div class="body">
+                    <b>ARROW: Restoration-Aware Traffic Engineering</b><br>
+                    Z. Zhong, M. Ghobadi, A. Khaddaj, J. Leach, Y. Xia, Y. Zhang<br>
+                    <em><a href="https://conferences.sigcomm.org/sigcomm/2021/">ACM SIGCOMM 2021</a></em><br>
+                    <a href="http://bow.csail.mit.edu/" target="_blank"><b>ARROW Project Page</b></a> |
+                    <a href="https://people.csail.mit.edu/ghobadi/papers/arrow_sigcomm_2021.pdf"
+                        target="_blank">Paper</a> |
+                    <a href="https://people.csail.mit.edu/ghobadi/slides/ARROW_SIGCOMM_2021.pptx"
+                        target="_blank">Slides</a>
+                    |
+                    <a href="https://www.youtube.com/watch?v=DYvYNSH1cRA" target="_blank">Video</a> |
+                    <a href="#paper" onclick="showCitation2(); return false;">BibTeX</a> |
+                    <a href="https://github.com/hipersys-team/arrow" target="_blank">Artifact</a> |
+                    <a href="https://news.mit.edu/2021/who-can-bend-light-cheaper-internet-0830" target="_blank">MIT
+                        News</a>
+                </div>
+                <div class="citation" id="citation2">
+                    @inproceedings{zhong2021arrow,
+                    title={ARROW: restoration-aware traffic engineering},
+                    author={Zhong, Zhizhen and Ghobadi, Manya and Khaddaj, Alaa and Leach, Jonathan and Xia, Yiting and
+                    Zhang, Ying},
+                    booktitle={Proceedings of the 2021 ACM SIGCOMM 2021 Conference},
+                    pages={560--579},
+                    year={2021}
+                    }
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="inner">
+                <div class="title">Contributors</div>
+                <div class="affiliation">
+                    <object class="logo" type="image/svg+xml" data="images/mit.svg" style="height:70px">
+                        Your browser does not support SVG
+                    </object>
+                    <ul class="names">
+                        <li><a href="http://people.csail.mit.edu/zhizhenzhong/" target="_blank">Zhizhen Zhong</a></li>
+                        <li><a href="http://people.csail.mit.edu/ghobadi/" target="_blank">Manya Ghobadi</a></li>
+                    </ul>
+                </div>
+                <div class="affiliation">
+                    <object class="logo" type="image/svg+xml" data="images/Facebook.svg" style="height:70px">
+                        Your browser does not support SVG
+                    </object>
+                    <ul class="names">
+                        <li><a href="https://scholar.google.com/citations?user=N0iLicUAAAAJ&hl=en"
+                                target="_blank">Maximilian Balandat</a></li>
+                        <li><a href="https://www.linkedin.com/in/sgkatti/" target="_blank">Sanjeevkumar Katti</a></li>
+                        <li><a href="https://scholar.google.com/citations?user=xgCsWGUAAAAJ&hl=en&oi=ao"
+                                target="_blank">Abbas Kazerouni</a></li>
+                        <li><a href="https://www.linkedin.com/in/jonathan-leach-438a2b36/" target="_blank">Jonathan
+                                Leach</a></li>
+                        <li><a href="https://www.linkedin.com/in/mark-mckillop-9474652/" target="_blank">Mark
+                                McKillop</a></li>
+                        <li><a href="https://research.fb.com/people/zhang-ying/" target="_blank">Ying Zhang</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="inner">
+                <div class="title"><a href="https://accessibility.mit.edu/">Accessibility</a></div>
+                <script type='text/javascript' id='clustrmaps'
+                    src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=200&t=tt&d=4kDg8oKoURbsDvqEZZjdI1qTPjPd53bIoNWI9kTHbTo'></script>
+            </div>
+        </div>
+        <footer>
+        </footer>
+</body>
